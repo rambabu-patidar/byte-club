@@ -1,0 +1,18 @@
+.blog-nav {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.blog-nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.blog-nav-list li {
+  padding: .5rem 1rem;
+}
+
+.icon {
+  padding-right: 0.3rem;
+}
