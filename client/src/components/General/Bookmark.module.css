@@ -1,0 +1,33 @@
+.container {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+
+}
+
+.items li {
+  margin: 0.6rem 0;
+
+}
+
+.items li h3 {
+  padding: .5rem 0;
+}
+
+.details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.details p {
+  padding: 0.2rem 0.3rem;
+}
+
+.details span {
+  font-style: italic;
+}

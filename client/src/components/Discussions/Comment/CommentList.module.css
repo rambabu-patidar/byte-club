@@ -1,0 +1,55 @@
+.comment-section h3 {
+  padding: 1rem 0;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.comment img {
+  border-radius: 50%;
+  margin-right: 0.7rem;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.author {
+  font-weight: bold;
+  font-size: large;
+}
+
+.info span {
+  margin-right: 1rem;
+}
+
+.info time,
+.replies {
+  color: grey;
+}
+
+.interations {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.interations span {
+  margin-right: 1rem;
+}
+
+.load-comment {
+  color: grey;
+  margin-left: 2rem;
+  text-decoration: none;
+}

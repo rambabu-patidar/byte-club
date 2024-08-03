@@ -1,6 +1,6 @@
 import React from "react";
 
-import BlogItem from "./BlogItem";
+import BlogItem from "./BlogItem/BlogItem";
 
 import styles from "./BlogList.module.css";
 
@@ -11,32 +11,18 @@ const BLOGS = [
 	{ title: "fourth" },
 	{ title: "fifth" },
 	{ title: "first" },
-	{ title: "second" },
-	{ title: "third" },
-	{ title: "fourth" },
-	{ title: "fifth" },
-	{ title: "first" },
-	{ title: "second" },
-	{ title: "third" },
-	{ title: "fourth" },
-	{ title: "fifth" },
-	{ title: "first" },
-	{ title: "second" },
-	{ title: "third" },
-	{ title: "fourth" },
-	{ title: "fifth" },
-	{ title: "first" },
-	{ title: "second" },
-	{ title: "third" },
-	{ title: "fourth" },
-	{ title: "fifth" },
+	{ title: "this" },
 ];
 
-const BlogList = () => {
+const BlogList = (props) => {
 	return (
 		<ul className={styles["blog-list"]}>
 			{BLOGS.map((blog) => (
-				<BlogItem key={blog.title} title={blog.title} />
+				<BlogItem
+					key={Math.random().toString()}
+					title={blog.title}
+					discussionPage={props.discussionPage}
+				/>
 			))}
 		</ul>
 	);

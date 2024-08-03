@@ -16,14 +16,16 @@
   justify-content: center;
 }
 
-.mid-nav li {
+.mid-nav li a {
   padding: 0.5rem 2rem;
 
 }
 
-.mid-nav li:hover {
-  border: 0.2px solid grey;
+.mid-nav li a:hover,
+.right-nav li:hover {
   border-radius: 15px;
+  background-color: #d9d9d9c9;
+  cursor: pointer;
 }
 
 .right-nav {
@@ -35,12 +37,9 @@
 
 .right-nav li {
   padding: 0.5rem 1rem;
+  border: 0.01px solid transparent;
 }
 
-.right-nav li:hover {
-  border: 0.01px solid grey;
-  border-radius: 15px;
-}
 
 @media screen and (max-width: 1200px) {
   .mid-nav {

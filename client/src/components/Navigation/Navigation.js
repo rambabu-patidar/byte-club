@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { CiSearch } from "react-icons/ci";
 import { IoMoonOutline } from "react-icons/io5";
 import { IoIosNotificationsOutline } from "react-icons/io";
@@ -13,9 +15,15 @@ const Navigation = () => {
 			</article>
 
 			<ul className={styles["mid-nav"]}>
-				<li>First</li>
-				<li>Second</li>
-				<li>Third</li>
+				<li>
+					<Link to="/">My Feed</Link>
+				</li>
+				<li>
+					<Link to="/discussions">Discussions</Link>
+				</li>
+				<li>
+					<Link to="/explore">Explore</Link>
+				</li>
 			</ul>
 
 			<article>

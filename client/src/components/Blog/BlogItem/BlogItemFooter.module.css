@@ -1,0 +1,16 @@
+.footer {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer div span {
+  padding: 0.5rem 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .footer div span {
+    padding-left: 0;
+  }
+}

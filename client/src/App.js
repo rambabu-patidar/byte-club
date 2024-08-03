@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/Home";
+import Discussion from "./pages/Discussion";
 
 const App = () => {
 	const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const App = () => {
 				{
 					index: true,
 					element: <HomePage />,
+				},
+				{
+					path: "discussions",
+					element: <Discussion />,
 				},
 			],
 		},

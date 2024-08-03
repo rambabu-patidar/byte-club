@@ -2,7 +2,7 @@ import React from "react";
 
 import BlogNavigation from "./BlogNavigation";
 import BlogList from "./BlogList";
-import General from "../General/General";
+import GeneralLayout from "../Layout/General";
 
 import styles from "./Blog.module.css";
 
@@ -11,11 +11,9 @@ const Blog = () => {
 		<div className={styles.container}>
 			<main className={styles.main}>
 				<BlogNavigation />
-				<BlogList />
+				<BlogList discussionPage={false} />
 			</main>
-			<aside className={styles.aside}>
-				<General />
-			</aside>
+			<GeneralLayout />
 		</div>
 	);
 };
